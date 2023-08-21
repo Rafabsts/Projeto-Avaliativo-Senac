@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(33, 6, 145);
+}
+
+
+
+
+#sudoku-board {
+    width: 360px;
+    margin: 0 auto;
+  }
+  
+  .sudoku-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .sudoku-cell {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #097ea1;
+    margin: 1px;
+    outline: none;
+    background-color: #f2f7f5;
+  }
+  
+  /* Estilos para células predefinidas (não editáveis) */
+  .sudoku-cell[readonly] {
+    background-color: #790909;
+  }
+  
+  /* Estilos para células erradas */
+  .sudoku-cell.wrong {
+    background-color: #0f8eb4;
+  }
+  
+  /* Estilos para células selecionadas */
+  .sudoku-cell:focus {
+    background-color: #90b608;
+  }
+  
